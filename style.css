@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+.todo-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    overflow-x: revert;
+}
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus {
+    border-color: #f6d365;
+}
+button {
+    padding: 10px 20px;
+    background: #fda085;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+button:hover {
+    background: #f6d365;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+li.completed {
+    background: #d4edda;
+    text-decoration: line-through;
+}
+.task-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+li button {
+    background: #ff6b6b;
+    margin-left: 10px;
+}
+li button:hover {
+    background: #ee5253;
+}
+img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ... همان استایل‌های قبلی ... */
+.image-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
